@@ -1,13 +1,13 @@
 'use strict';
-function name(){
-	var userName = prompt('What is your name?');
-// console.log('Welcome' + greeting);
-alert('Welcome ' + userName);
-
-} 
-
 
 let correctAnswers = 0;
+
+function nameQ(){
+	var userName = prompt('What is your name?');
+	// console.log('Welcome' + greeting);
+	alert('Welcome ' + userName);
+} 
+
 function firstQ() {
 	var first = prompt('Are you ready to know more about Me through playing this game? \n[please answer by typing: (Yes/No) or (Y/N)]');
 	
@@ -18,9 +18,9 @@ function firstQ() {
 	} else {
 		// console.log('I am sorry for you');
 		alert('I am sorry for you');
-	}
-	
+	}	
 }
+
 function secondQ() {
 	var second = prompt('Are you think i have a BA degree? \n[please answer by typing: (Yes/No) or (Y/N)]');
 	
@@ -32,10 +32,9 @@ function secondQ() {
 		// console.log('Wrong, i have a BA of Science in Software Engineering');
 		alert('Wrong, i have a BA of Science in Software Engineering');
 	}
-
 }
-function thirdQ(){
 
+function thirdQ(){
 	var third = prompt('Are you think that i have knowledge of programmin? \n[please answer by typing: (Yes/No) or (Y/N)]');
 	
 	if (third.toLowerCase() === 'yes' || third.toLowerCase() === 'y') {
@@ -59,8 +58,8 @@ function fourthQ(){
 		// console.log('Wrong, i have a total of three years of experience.');
 		alert('Wrong, i have a total of three years of experience.');
 	}
-
 }
+
 function fifthQ() {
 
 	var fifth = prompt('Are you think that i have repositories on github? \n[please answer by typing: (Yes/No) or (Y/N)]');
@@ -76,8 +75,8 @@ function fifthQ() {
 }
 
 let j = 0;
-function sixthQ(){
-	
+
+function sixthQ(){	
 	for (let i = 0; i < 4; i++) {
 		var guess = prompt('Please guess a number between 0 and 10 \n you have 4 times to try \n now you have ' + (4 - i) + ' left.');
 	
@@ -167,12 +166,7 @@ function seventhQ(){
 // 	}
 // }
 
-// console.log('You have ' + correctAnswers + ' correct answer(s).);
-alert('You have ' + correctAnswers + ' correct answer(s).');
-
-// console.log('Thank you, See you again ' + userName);
-alert('Thank you, See you again ' + userName);
-
+nameQ();
 firstQ();
 secondQ();
 thirdQ();
@@ -181,3 +175,8 @@ fifthQ();
 sixthQ();
 seventhQ();
 
+// console.log('You have ' + correctAnswers + ' correct answer(s).);
+alert('You have ' + correctAnswers + ' correct answer(s).');
+
+// console.log('Thank you, See you again ' + userName);
+alert('Thank you, See you again ' + userName);
